@@ -18,7 +18,7 @@ export class Transaction {
   @Column()
   title: string;
 
-  @Column('enum')
+  @Column()
   type: 'income' | 'outcome';
 
   @Column('float')
@@ -27,7 +27,7 @@ export class Transaction {
   @UpdateDateColumn()
   updated_at: Date;
 
-  @Column('uuid')
+  @Column()
   category_id: string;
 
   @ManyToOne(() => Category)

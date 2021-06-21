@@ -8,7 +8,7 @@ export default {
     storage: multer.diskStorage({
         destination: tmpFolder,
         filename(request, file, callback) {
-            return callback(null, " " + file.originalname);
+            return callback(null, file.originalname);
         },
     }),
 };

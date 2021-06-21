@@ -21,7 +21,7 @@ class ImportTransactionsService {
 
     const file = fs.readFileSync(path, 'utf-8');
 
-    const fileLinesWithTitle = file.split('\r\n');
+    const fileLinesWithTitle = file.split('\n');
 
     const fileLines = fileLinesWithTitle.splice(1, fileLinesWithTitle.length);
 

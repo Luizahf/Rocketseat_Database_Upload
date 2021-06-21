@@ -5,7 +5,7 @@ export default class CreateTransactions1614716092467 implements MigrationInterfa
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-                name: 'transactions',
+                name: "transactions",
                 columns: [
                     {
                         name: 'id',
@@ -42,7 +42,7 @@ export default class CreateTransactions1614716092467 implements MigrationInterfa
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('transactions');
+        await queryRunner.dropTable("transactions");
     }
 
 }
